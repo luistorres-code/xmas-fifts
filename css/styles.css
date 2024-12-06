@@ -1,0 +1,221 @@
+:root {
+	--green: #6a994e;
+	--dark-green: #2d3a2d;
+	--light-green: #a7c957;
+	--light-color: #f2e8cf;
+	--red-color: #bc4749;
+	--white-color: #f5f5f5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+	background-color: var(--dark-green);
+	color: var(--light-color);
+}
+
+.flex-column-all-h {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0.4rem;
+}
+
+#welcomeForm {
+	padding: 1rem;
+}
+
+.container-fluid {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-content {
+	width: auto;
+}
+
+.d-none {
+	display: none;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.p-2 {
+	padding: 0.5rem;
+}
+
+.text-green {
+	color: var(--green);
+}
+
+.text-light-green {
+	color: var(--light-green);
+}
+
+.text-dark-green {
+	color: var(--dark-green);
+}
+
+.text-white {
+	color: var(--white-color);
+}
+
+.text-red {
+	color: var(--red-color);
+}
+
+.header-flex-column {
+	padding: 0.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.form-floating {
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.form-floating input,
+.form-floating select {
+	width: 100%;
+	padding: 1rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	border: 0;
+	color: var(--light-color);
+	border-bottom: 1px solid var(--light-green);
+	border-radius: 0.25rem;
+	background-color: var(--dark-green);
+
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	appearance: none;
+}
+
+.form-floating label {
+	position: absolute;
+	top: 1rem;
+	left: 0.75rem;
+	padding: 0 0.25rem;
+	pointer-events: none;
+	transition: all 0.1s ease-in-out;
+	font-size: 1rem;
+	color: var(--light-color);
+	background-color: var(--dark-green);
+}
+
+.form-floating input:focus,
+.form-floating select:focus {
+	border-color: var(--light-green);
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem var(--light-green);
+}
+
+.form-floating input:not(:placeholder-shown) + label,
+.form-floating select:not(:placeholder-shown) + label,
+.form-floating input:focus + label,
+.form-floating select:focus + label {
+	top: -0.6rem;
+	left: 0.75rem;
+	font-size: 0.75rem;
+	color: var(--light-color);
+	background-color: var(--dark-green);
+	padding: 0 0.25rem;
+}
+
+#welcomeForm button {
+	width: 100%;
+	padding: 1rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	border: 0;
+	color: var(--light-color);
+	border-radius: 0.25rem;
+	background-color: var(--light-green);
+	cursor: pointer;
+	transition: background-color 0.15s ease-in-out;
+}
+
+@-webkit-keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.gifts-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.gifts-container a {
+	color: var(--light-green);
+	text-decoration: none;
+	max-width: 12rem;
+}
+
+.gifts-container a img {
+	max-width: 10rem;
+	border-radius: 1.2rem;
+}
+
+.gifts-container a p {
+	text-align: center;
+	margin: 0;
+}
+
+.gift-icon {
+	font-size: 10.5rem;
+}

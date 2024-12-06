@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Christmas Gifts</title>
+		<link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=featured_seasonal_and_gifts" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/snow.css" />
+	</head>
+	<body>
+		<main id="welcomeMain" class="tracking-in-expand flex-column-all-h d-none">
+			<section class="container-content">
+				<header class="header-flex-column">
+					<h1>¡Hola!</h1>
+					<h3>Primero me gustaría saber quien me visita</h3>
+				</header>
+
+				<form id="welcomeForm">
+					<div class="form-floating">
+						<input type="text" id="name" name="name" placeholder="Nombre" required />
+						<label for="name">Nombre</label>
+					</div>
+
+					<div class="form-floating">
+						<select id="genre" name="genre" required>
+							<option value="" selected disabled>Cómo te identificas?</option>
+							<option value="el">Él</option>
+							<option value="ella">Ella</option>
+							<option value="elle">Elle</option>
+							<option value="ellx">Ellx</option>
+						</select>
+						<label for="genre">Cómo te identificas</label>
+					</div>
+
+					<button type="submit"><span class="material-symbols-outlined"> arrow_forward </span></button>
+				</form>
+			</section>
+		</main>
+
+		<main id="mainPage" class="flex-column-all-h">
+			<div class="tpl-snow">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<section class="container-content">
+				<header class="header-flex-column">
+					<h1 id="welcomeMessage">Bienvenido {{ Usuario }}</h1>
+					<h3>He seleccionado regalos que me podrías dar en esta navidad, son sorpresa, así que ve dando click para revelarlos</h3>
+				</header>
+
+				<section class="gifts-container">
+					<a href="#view=1">
+						<span class="material-symbols-outlined gift-icon"> featured_seasonal_and_gifts </span>
+					</a>
+
+					<a href="#view=2">
+						<img src="https://img.hollisterco.com/is/image/anf/KIC_322-4176-00210-200_model1.jpg" alt="Sudadera" />
+						<p>Sudadera</p>
+					</a>
+					<span class="material-symbols-outlined gift-icon"> featured_seasonal_and_gifts </span>
+					<span class="material-symbols-outlined gift-icon"> featured_seasonal_and_gifts </span>
+					<span class="material-symbols-outlined gift-icon"> featured_seasonal_and_gifts </span>
+					<span class="material-symbols-outlined gift-icon"> featured_seasonal_and_gifts </span>
+					<span class="material-symbols-outlined gift-icon"> featured_seasonal_and_gifts </span>
+				</section>
+			</section>
+		</main>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+		<script src="./js/nodes.js"></script>
+		<script src="./js/gifts.js"></script>
+	</body>
+</html>
