@@ -1,6 +1,6 @@
 @-moz-keyframes nieve {
 	from {
-		top: -40px;
+		top: -10px;
 	}
 	to {
 		top: 101%;
@@ -8,18 +8,18 @@
 }
 @-webkit-keyframes nieve {
 	from {
-		top: -40px;
+		top: -10px;
 	}
 	to {
-		top: 2000px;
+		top: 101%;
 	}
 }
 @keyframes nieve {
 	from {
-		top: -40px;
+		top: -10px;
 	}
 	to {
-		top: 2000px;
+		top: 101%;
 	}
 }
 
@@ -91,15 +91,26 @@
 	}
 }
 
-.tpl-snow > div {
+.tpl-snow {
 	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.tpl-snow > div {
 	-webkit-animation: ease-in infinite normal;
 	-moz-animation: ease-in infinite normal;
 	animation: ease-in infinite normal;
 }
 
 .tpl-snow > div {
-	z-index: 9999999999999;
+	position: fixed;
+	top: -10px;
+	z-index: -1;
 	width: 10px;
 	height: 10px;
 	-moz-border-radius: 50%;
