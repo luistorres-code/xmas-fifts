@@ -34,7 +34,7 @@ const GIFT_INFORMATION = {
 	5: {
 		name: "Cápsulas de café Nespresso Vertuo",
 		description: "Cápsulas de café Nespresso Vertuo, mis favoritas son: Il Caffè, Diavolito, Melozio e Intenso",
-		price: 0.0,
+		price: 170.0,
 		image: "https://m.media-amazon.com/images/I/61K9nWSTB6L.jpg",
 		link: "https://www.nespresso.com/mx/es/order/capsules/vertuo",
 		otherPlaces: ["Nespresso Satélite", "Palacio de Hierro"],

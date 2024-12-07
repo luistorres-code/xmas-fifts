@@ -151,6 +151,7 @@ function createGiftNodes(giftID, value) {
 
 function fillOtherPlaces(otherPlaces) {
 	const ulNode = otherPlace.querySelector("ul");
+	ulNode.innerHTML = "";
 	(otherPlaces || []).forEach((place) => {
 		const li = document.createElement("li");
 		li.textContent = place;
