@@ -5,17 +5,20 @@
 	--light-color: #f2e8cf;
 	--red-color: #bc4749;
 	--white-color: #f5f5f5;
+	box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
+	margin: 0;
 }
 
 html {
 	font-size: 10px;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -62,6 +65,23 @@ body {
 	padding: 0.4rem;
 }
 
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.4rem;
+}
+
+.flex-rows {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
 #welcomeForm {
 	padding: 1rem;
 }
@@ -88,6 +108,10 @@ body {
 
 .mt-0 {
 	margin-top: 0;
+}
+
+.mt-2 {
+	margin-top: 2rem;
 }
 
 .p-2 {
@@ -244,4 +268,124 @@ body {
 
 .gift-icon {
 	font-size: 10.5rem;
+}
+
+.nav-tab {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1.2rem 2.4rem;
+	font-size: 2rem;
+}
+
+.nav-item {
+	color: var(--light-green);
+	text-decoration: none;
+}
+
+.link-disabled {
+	pointer-events: none;
+	color: rgba(167, 201, 87, 0.1);
+}
+
+.photo-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 40rem;
+}
+
+.photo-container img {
+	width: 100%;
+	border-radius: 1.2rem;
+}
+
+#priceGift {
+	margin: 0;
+}
+
+#nameGift {
+	font-size: 3rem;
+	font-family: "Parkinsans", sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#nameGift::first-letter {
+	font-size: 4.5rem;
+}
+
+#descriptionGift {
+	font-size: 1.5rem;
+}
+
+#linkGift {
+	display: block; /* Asegura que el enlace se comporte como un bloque */
+	width: 100%; /* Ocupa todo el ancho del contenedor */
+	padding: 1rem; /* Añade padding para que parezca un botón */
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-align: center;
+	background-color: var(--light-green);
+	color: var(--dark-green);
+	border: none; /* Elimina cualquier borde predeterminado */
+	border-radius: 0.5rem; /* Añade bordes redondeados */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+	transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+#linkGift:hover {
+	background-color: var(--green); /* Cambia el color de fondo al pasar el cursor */
+}
+
+#linkGift:active {
+	transform: scale(0.95); /* Reduce el tamaño del enlace al hacer clic */
+}
+
+#otherPlace {
+	background-color: rgba(167, 201, 87, 0.25);
+
+	padding: 2rem;
+	border-radius: 1rem;
+	margin-top: 2rem;
+}
+
+#otherPlace ul {
+	list-style-image: url(../img/santa.png);
+}
+
+.notice-label {
+	font-size: 1.2rem;
+	background: rgba(188, 71, 73, 0.25);
+	margin-top: 1.5rem;
+	padding: 1.6rem;
+}
+
+footer {
+	margin-top: auto; /* Empuja el footer al final de la página */
+	width: 100%;
+	display: flex;
+	justify-content: center; /* Centra el contenido horizontalmente */
+	background-color: var(--dark-green); /* Ajusta el color de fondo si es necesario */
+	padding: 1rem 0; /* Añade padding para espacio adicional */
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: var(--dark-green) !important; /* Cambia el color de fondo de los controles */
+	color: var(--light-color) !important; /* Cambia el color del texto */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-timeline {
+	color: var(--light-color) !important; /* Cambia el color del texto y los iconos */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-fullscreen-button {
+	color: var(--light-color) !important; /* Cambia el color del texto y los iconos */
 }
