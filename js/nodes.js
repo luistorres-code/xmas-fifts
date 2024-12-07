@@ -13,7 +13,10 @@ const welcomeForm = $("welcomeForm");
 // Main Page
 const giftsContainer = $("giftsContainer");
 const welcomeMessage = $("welcomeMessage");
+
 // View Page
+const loaderContainer = $("loaderContainer");
+const contentContainer = $("contentContainer");
 const navbarContainer = $("navbarContainer");
 const photoGift = $("photoGift");
 const priceGift = $("priceGift");

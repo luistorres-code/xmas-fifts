@@ -13,6 +13,7 @@ const GIFT_INFORMATION = {
 		price: 787.58,
 		image: "https://img.hollisterco.com/is/image/anf/KIC_322-4176-00210-200_model1.jpg",
 		link: "https://www.hollisterco.com/shop/wd-es/p/sudadera-holgada-con-capucha-y-logo-58565821?categoryId=12572&faceout=model&seq=16",
+		otherPlaces: ["Liverpool", "Sears", "Hollister Satélite", "Hollister Perisur"],
 	},
 	3: {
 		name: "Bateria externa",
@@ -20,6 +21,7 @@ const GIFT_INFORMATION = {
 		price: 588.55,
 		image: "https://m.media-amazon.com/images/I/71ManMP7pZL._AC_SL1500_.jpg",
 		link: "https://a.co/d/alWVTil",
+		otherPlaces: ["iShop", "Liverpool", "Sears", "Mercado Libre"],
 	},
 	4: {
 		name: "Kindle",
@@ -27,6 +29,7 @@ const GIFT_INFORMATION = {
 		price: 2099.0,
 		image: "https://m.media-amazon.com/images/I/71w-4uiDzoL._AC_SL1500_.jpg",
 		link: "https://a.co/d/g7CsPbQ",
+		otherPlaces: ["MixUp", "Liverpool", "Sears"],
 	},
 	5: {
 		name: "Cápsulas de café Nespresso Vertuo",
@@ -34,6 +37,7 @@ const GIFT_INFORMATION = {
 		price: 0.0,
 		image: "https://m.media-amazon.com/images/I/61K9nWSTB6L.jpg",
 		link: "https://www.nespresso.com/mx/es/order/capsules/vertuo",
+		otherPlaces: ["Nespresso Satélite", "Palacio de Hierro"],
 	},
 	6: {
 		name: "Sudadera nacota de Calvin Klein",
@@ -41,5 +45,6 @@ const GIFT_INFORMATION = {
 		price: 2499.0,
 		image: "https://calvinkleinmx.vteximg.com.br/arquivos/ids/506646-1764.1000000000001-1923/J30J320805P41-PLANO.jpg",
 		link: "https://www.calvinklein.mx/sudadera-calvin-klein-monologo-mujer-gris-j30j320805-p41/p",
+		otherPlaces: ["Liverpool", "Sears", "Calvin Klein Perisur", "Calvin Klein Santa Fe", "Calvin Klein Satélite"],
 	},
 };

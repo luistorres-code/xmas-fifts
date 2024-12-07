@@ -80,6 +80,8 @@ function manageMainPage() {
 }
 
 function manageViewPage(giftID) {
+	loaderContainer.classList.remove("d-none");
+	contentContainer.classList.add("d-none");
 	const gift = GIFT_INFORMATION[giftID];
 	const { name, description, price, image, link, otherPlaces } = gift;
 
@@ -90,6 +92,11 @@ function manageViewPage(giftID) {
 	photoGift.src = image;
 	photoGift.alt = name;
 	fillOtherPlaces(otherPlaces);
+
+	setTimeout(() => {
+		loaderContainer.classList.add("d-none");
+		contentContainer.classList.remove("d-none");
+	}, 1000);
 }
 
 function checkClickedLinks() {
