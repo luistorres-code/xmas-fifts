@@ -182,7 +182,7 @@ body {
 .form-floating select {
 	width: 100%;
 	padding: 1rem 0.75rem;
-	font-size: 1rem;
+	font-size: 1.6rem;
 	line-height: 1.25;
 	border: 0;
 	color: var(--light-color);
