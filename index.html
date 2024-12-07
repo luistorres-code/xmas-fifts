@@ -27,12 +27,12 @@
 
 				<form id="welcomeForm">
 					<div class="form-floating">
-						<input type="text" id="name" name="name" placeholder="Nombre" required />
+						<input type="text" id="nameInput" name="name" placeholder="Nombre" required />
 						<label for="name">Nombre</label>
 					</div>
 
 					<div class="form-floating">
-						<select id="genre" name="genre" required>
+						<select id="genreInput" name="genre" required>
 							<option value="" selected disabled>Cómo te identificas?</option>
 							<option value="el">Él</option>
 							<option value="ella">Ella</option>
@@ -42,12 +42,14 @@
 						<label for="genre">Cómo te identificas</label>
 					</div>
 
-					<button type="submit"><span class="material-symbols-outlined"> arrow_forward </span></button>
+					<button type="submit">
+						<i class="bi bi-arrow-right"></i>
+					</button>
 				</form>
 			</section>
 		</main>
 
-		<main id="mainPage" class="flex-column-all-h">
+		<main id="mainPage" class="flex-column-all-h d-none">
 			<div class="tpl-snow">
 				<div></div>
 				<div></div>
@@ -100,7 +102,7 @@
 			</div>
 			<section class="container-content">
 				<header class="header-flex-column">
-					<h1 id="welcomeMessage">Bienvenido {{ Usuario }}</h1>
+					<h1 id="welcomeMessage" class="welcome-title">Bienvenido {{ Usuario }}</h1>
 					<h3>He seleccionado regalos que me podrías dar en esta navidad, son sorpresa, así que ve dando click para revelarlos</h3>
 				</header>
 
@@ -124,20 +126,20 @@
 
 		<main id="viewPage" class="flex-column d-none">
 			<header class="nav-tab" id="navbarContainer">
-				<a href="#view=0" class="nav-item">
+				<!-- <a href="#view=0" class="nav-item">
 					<i class="bi bi-arrow-left-circle"></i>
-				</a>
+				</a> -->
 
-				<a href="#home" class="nav-item">
+				<a href="#home" class="nav-item-home">
 					<i class="bi bi-house"></i>
 				</a>
 
-				<a href="#view=0" class="nav-item link-disabled">
+				<!-- <a href="#view=0" class="nav-item link-disabled">
 					<i class="bi bi-arrow-right-circle"></i>
-				</a>
+				</a> -->
 			</header>
 
-			<section class="flex-rows">
+			<section class="flex-rows p-2">
 				<article class="photo-container">
 					<img id="photoGift" src="https://img.hollisterco.com/is/image/anf/KIC_322-4176-00210-200_model1.jpg" alt="Sudadera" />
 				</article>
@@ -172,5 +174,6 @@
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
 		<script src="./js/nodes.js"></script>
 		<script src="./js/gifts.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

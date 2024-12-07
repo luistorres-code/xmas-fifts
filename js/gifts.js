@@ -1,10 +1,11 @@
 const GIFT_INFORMATION = {
 	1: {
 		name: "Cargador Inalámbrico",
-		description: "Estación de carga MagSage para iPhone, Airpods y Apple Watch",
+		description: "Estación de carga MagSage para iPhone, Airpods y Apple Watch. Es importante que sea de carga rápida para que no tarde mil vidas en cargar.",
 		price: 583.99,
 		image: "https://m.media-amazon.com/images/I/619i8DIQy+L._AC_SL1500_.jpg",
 		link: "https://a.co/d/1tqIayK",
+		otherPlaces: ["iShop", "Liverpool", "Sears", "Mercado Libre"],
 	},
 	2: {
 		name: "Sudadera",

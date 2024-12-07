@@ -147,6 +147,17 @@ body {
 	text-align: center;
 }
 
+.welcome-title {
+	font-size: 3rem;
+	font-family: "Parkinsans", sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.welcome-title::first-letter {
+	font-size: 4.5rem;
+}
+
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -210,11 +221,16 @@ body {
 	font-size: 1rem;
 	line-height: 1.25;
 	border: 0;
+	font-size: 3rem;
 	color: var(--light-color);
 	border-radius: 0.25rem;
 	background-color: var(--light-green);
 	cursor: pointer;
 	transition: background-color 0.15s ease-in-out;
+}
+
+#welcomeForm button:hover {
+	background-color: var(--green);
 }
 
 @-webkit-keyframes tracking-in-expand {
@@ -253,12 +269,15 @@ body {
 .gifts-container a {
 	color: var(--light-green);
 	text-decoration: none;
-	max-width: 12rem;
+	width: 100%;
+	max-width: 24rem;
+	text-align: center;
 }
 
 .gifts-container a img {
 	max-width: 10rem;
 	border-radius: 1.2rem;
+	width: 100%;
 }
 
 .gifts-container a p {
@@ -272,7 +291,7 @@ body {
 
 .nav-tab {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 	padding: 1.2rem 2.4rem;
@@ -282,6 +301,27 @@ body {
 .nav-item {
 	color: var(--light-green);
 	text-decoration: none;
+}
+
+.nav-item-home {
+	padding: 0.5rem 1rem; /* Añade padding para que parezca un botón */
+	font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+	text-decoration: none; /* Elimina el subrayado del enlace */
+	text-align: center; /* Centra el texto */
+	background-color: var(--red-color); /* Color de fondo */
+	color: var(--light-color); /* Color del texto */
+	border: none; /* Elimina cualquier borde predeterminado */
+	border-radius: 0.5rem; /* Añade bordes redondeados */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+	transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+.nav-item-home:hover {
+	background-color: var(--green); /* Cambia el color de fondo al pasar el cursor */
+}
+
+.nav-item-home:active {
+	transform: scale(0.95); /* Reduce el tamaño del enlace al hacer clic */
 }
 
 .link-disabled {
