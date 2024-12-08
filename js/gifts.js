@@ -47,4 +47,28 @@ const GIFT_INFORMATION = {
 		link: "https://www.calvinklein.mx/sudadera-calvin-klein-monologo-mujer-gris-j30j320805-p41/p",
 		otherPlaces: ["Liverpool", "Sears", "Calvin Klein Perisur", "Calvin Klein Santa Fe", "Calvin Klein Satélite"],
 	},
+	7: {
+		name: "Eau de parfum Polo Ralph Lauren Ralph's Club para hombre",
+		description: "os ingredientes de origen natural, producidos artesanalmente para Ralph Lauren con la máxima calidad, dejan una estela persistente que te llevará hasta la noche.",
+		price: 3500.0,
+		image: "https://ss701.liverpool.com.mx/xl/1127310421.jpg",
+		link: "https://www.liverpool.com.mx/tienda/pdp/eau-de-parfum-polo-ralph-lauren-ralph's-club-para-hombre/1127309501",
+		otherPlaces: ["Palacio de Hierro", "Sears"],
+	},
+	8: {
+		name: "Jeans coreanezcos negros Hollister",
+		description: "Jeans rectos negros que no se decoloran",
+		price: 984.72,
+		image: "https://img.hollisterco.com/is/image/anf/KIC_331-2230-2834-975_model2.jpg",
+		link: "https://www.hollisterco.com/shop/wd-es/p/black-no-fade-straight-jeans-50236419-1002?categoryId=12589&faceout=model&seq=11",
+		otherPlaces: ["Liverpool", "Sears", "Palacio de Hierro"],
+	},
+	9: {
+		name: "Jeans Coreanezco claro Hollister",
+		description: "Jeans holgados con lavado claro",
+		price: 984.72,
+		image: "https://img.hollisterco.com/is/image/anf/KIC_331-4114-00093-280_model2.jpg",
+		link: "https://www.hollisterco.com/shop/wd-es/p/light-wash-loose-jeans-57207325-1002?categoryId=12589&faceout=model&seq=25",
+		otherPlaces: ["Liverpool", "Sears", "Palacio de Hierro"],
+	},
 };

@@ -102,6 +102,18 @@ function manageViewPage(giftID) {
 function checkClickedLinks() {
 	const clickedLinks = JSON.parse(localStorage.getItem("clickedLinks"));
 
+	const giftKeys = Object.keys(GIFT_INFORMATION);
+
+	// Verificar y actualizar clickedLinks
+	giftKeys.forEach((giftID) => {
+		if (!(giftID in clickedLinks)) {
+			clickedLinks[giftID] = false; // Añadir el giftID si no está en clickedLinks
+		}
+	});
+
+	// Guardar los clickedLinks actualizados en localStorage
+	localStorage.setItem("clickedLinks", JSON.stringify(clickedLinks));
+
 	giftsContainer.innerHTML = "";
 
 	Object.entries(clickedLinks).forEach(([giftID, value]) => {
