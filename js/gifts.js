@@ -71,4 +71,20 @@ const GIFT_INFORMATION = {
 		link: "https://www.hollisterco.com/shop/wd-es/p/light-wash-loose-jeans-57207325-1002?categoryId=12589&faceout=model&seq=25",
 		otherPlaces: ["Liverpool", "Sears", "Palacio de Hierro"],
 	},
+	10: {
+		name: "Mario + Rabbids® Sparks of Hope edición Gold",
+		description: "Haz equipo con Mario, Luigi, la princesa Peach, Rabbid Peach, Rabbid Luigi y sus amigos en un viaje galáctico para derrotar a una entidad malvada y salvar a tus compañeros Spark. ¡Explora planetas a través de la galaxia conforme descubres misteriosos secretos y disfrutas de atractivas misiones!",
+		price: 653.0,
+		image: "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24124990/sparks_hope_guides.jpg",
+		link: "https://www.nintendo.com/es-mx/store/products/mario-plus-rabbids-sparks-of-hope-gold-edition-switch/",
+		otherPlaces: ["Game Planet", "Liverpool", "Sears", "Palacio de Hierro", "Sanborns", "Amazon"],
+	},
+	11: {
+		name: "MARIO STRIKERS BATTLE LEAGUE",
+		description: "Les presentamos Strike, un deporte de 5 contra 5 inspirado en el fútbol donde no hay reglas, ¡así que haz lo que tengas que hacer para conseguir la victoria! Juega con determinación e intenta anotar el mayor número de goles al superar a tus enemigos con entradas, usar objetos y lanzar tiros especiales que incrementarán tu puntuación. Personajes conocidos de la serie Super Mario, como Peach, Toad y Yoshi, llegarán con sus zapatillas de fútbol (y sus estadísticas) a la cancha y no se detendrán ante nada para anotar.",
+		price: 1000.0,
+		image: "https://cdn.gameplanet.com/wp-content/uploads/2022/09/05065152/mario-strikers-battle-league_1-510x630.jpg",
+		link: "https://gameplanet.com/producto/mario-strikers-battle-league-nsw/",
+		otherPlaces: ["Nintendo eShop", "Liverpool", "Sears", "Palacio de Hierro", "Sanborns", "Amazon"],
+	},
 };
